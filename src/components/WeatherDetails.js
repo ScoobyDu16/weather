@@ -8,7 +8,7 @@ const degToCompass= (num)=> {
     return arr[(val % 16)];
 }
 
-const WeatherDetails = ({weather}) => {
+const WeatherDetails = ({weather, unit}) => {
 
     return <>
         <div className='text-white'>
@@ -17,7 +17,7 @@ const WeatherDetails = ({weather}) => {
             </div>
             <div className='flex items-center justify-between my-3'>
                 <img className='w-11' src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="sun" />
-                <p className='md:text-5xl text-2xl'>{Math.round(weather.main.temp)}°C</p>
+                <p className='md:text-5xl text-2xl'>{Math.round(weather.main.temp)}°{unit==='metric'? 'C' : 'F'}</p>
                 <div className='flex flex-col space-y-2'>
                     <div className='flex items-center font-light text-sm'>
                         <UilTemperature size={18} />
