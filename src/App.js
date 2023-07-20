@@ -107,7 +107,7 @@ const App = () => {
           )
       }
       <div className='sm:w-100 flex items-center justify-center'>
-      <footer className='text-sm font-bold my-3 mt-6 text-cyan-700 bg-white p-2 rounded-md'>Developed by Amarpal Singh @2022</footer>
+      <footer className='text-sm font-bold my-3 mt-6 text-cyan-700 bg-white p-2 rounded-md'>Developed by @Amarpal_Singh @2022</footer>
     </div>
     </div>
     <ToastContainer autoClose={1500} theme='colored' newestOnTop={true} />
